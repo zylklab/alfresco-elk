@@ -3,6 +3,7 @@ Kibana dashboards for monitoring Alfresco 5.x: System performance, Active Sessio
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Basic Setup](#basic-setup)
 - [ELK setup for Alfresco Community](#elk-setup-for-alfresco-community)
 - [ELK setup for Alfresco Enterprise](#elk-setup-for-alfresco-enterprise)
 - [Tested on](#tested-on)
@@ -22,6 +23,10 @@ As you probably know ELK = Elastic Search + Logstash + Kibana
 * Elastic Search is the index server
 * Kibana is an interface for searching and visualizing the indexed data (logs, metrics)
 * Logstash is the tool for extracting, transforming and loading data in Elastic Search 
+
+## Basic Setup
+
+![Basic Setup for ELK and Alfresco](images/alfresco_monitor.png)
 
 ## ELK setup for Alfresco Community
 
@@ -47,6 +52,10 @@ Some metrics are available via webscript using http-poller plugin in logstash:
 - Number of logged users
 - Number of tickets
 - System Load
+
+![Kibana Dashboard for System Performance](images/ootb-system-performance-dashboard.png)
+
+![Kibana Dashboard for Alfresco Logs](images/alfresco-logs-dashboard.png)
 
 ## ELK setup for Alfresco Enterprise
 
@@ -83,6 +92,8 @@ As example of JMX information these metrics are being used:
 - SOLR numDocs
 
 JMX bean objects in Alfresco may be browsed and inspected with the help of jconsole, jvisualvm or jmxshell. Alfresco objects are only available in Alfresco EE, although basic java, tomcat and system information may be used with Alfresco CE
+
+![Kibana Dashboard for Alfresco JMX](images/kibana-alfresco-jmx-system-performance.png)
 
 ## Tested on
 
