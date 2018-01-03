@@ -26,7 +26,7 @@ As you probably know ELK = Elastic Search + Logstash + Kibana
 
 ## Basic Setup
 
-![Basic Setup for ELK and Alfresco](images/alfresco_monitor.png)
+![Basic Setup for ELK and Alfresco](images/alfresco_monitor2.png)
 
 ## ELK setup for Alfresco Community
 
