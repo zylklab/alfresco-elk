@@ -11,27 +11,36 @@ Kibana dashboards for monitoring Alfresco 5.x: System performance, Active Sessio
 
 ## Introduction
 
-TODO
+ELK stack may be useful for Alfresco monitorization, including:
+* JMX metrics in Alfresco Enterprise (such as database NumActive, TicketAllNonExpired or SOLR NumDocuments).
+* A solution for your Alfresco logs.
+* A support tools-like system performance and active sessions, but in a persisted way.
+
+Different strategies may be done depending on Alfresco Community (via OOTB Support Tools webscripts) or Alfresco Enterprise (JMX information).
+
+As you probably know ELK = Elastic Search + Logstash + Kibana
+* Elastic Search is the index server
+* Kibana is an interface for searching and visualizing the indexed data (logs, metrics)
+* Logstash is the tool for extracting, transforming and loading data in Elastic Search 
 
 ## ELK setup for Alfresco Community
 
 ### Prerrequisites in Alfresco server
 
-* Install OOTB Support Tool addon
+* Install [OOTB Support Tools addon](https://github.com/OrderOfTheBee/ootbee-support-tools)
 
 ### Configuration
 
 * Install tools and startup scripts for Elastic, Kibana and Logstash.
 * Install logstash input plugins (http-poller-input)
-* Configure logstash client for Alfresco CE
-  * OOTB http-poller-input config in logstash.conf
+* Configure logstash.conf for http-poller-input
 * Import searches, visualizations and dashboards in Kibana management.
 
 ### Available metrics via OOTB Support Tools webscripts
 
-With [OOTB Support Tools addon for Alfresco Community Edition](https://github.com/OrderOfTheBee/ootbee-support-tools), it is possible to extract useful information about JVM, threads or logged users via webscript. We can use the JSON information from the available webscripts of the addon.
+With [OOTB Support Tools addon](https://github.com/OrderOfTheBee/ootbee-support-tools), it is possible to extract useful information about JVM, threads or logged users via webscript. We can use the JSON information from the available webscripts of the addon (System Performance, Active Users and SOLR).
 
-These metrics are available via logstash http-poller-input plugin:
+Some metrics are available via webscript using http-poller-input plugin in logstash:
 - JVM Used memory
 - Number of threads
 - Number of active database connections
@@ -52,15 +61,15 @@ For more details, you can check [Alfresco docs](https://docs.alfresco.com/5.0/ta
 ### Configuration
 
 * Install tools and startup scripts for Elastic, Kibana and Logstash.
-* Install logstash input plugins (jmx-input)
-* Configure logstash client for Alfresco EE
-  * JMX input config
-  * Endpoint and available objects in jmx/jmx.conf
+* Install logstash input plugins (jmx-input-plugin)
+* Configure logstash.conf for JMX input config and polling frequency
+* JMX endpoint and available objects in jmx/jmx.conf
 * Import searches, visualizations and dashboards in Kibana management.
 
 ### Available metrics via JMX
+JMX provides monitoring information of many properties such as NumActive (Connection Pool), TicketAllNonExpired, NumDocuments (SOLR), Disk sizes for your contentstores and indices and many many more.
 
-These metrics are available via logstash jmx input plugin:
+As example of JMX information these metrics are being used:
 
 - JVM Used memory
 - Number of threads
@@ -73,14 +82,16 @@ These metrics are available via logstash jmx input plugin:
 - Contentstore sizes
 - SOLR numDocs
 
+JMX bean objects in Alfresco may be browsed and inspected with the help of jconsole, jvisualvm or jmxshell. Alfresco objects are only available in Alfresco EE, although basic java, tomcat and system information may be used with Alfresco CE
+
 ## Tested on
 
 In your monitoring server:
-* Elasticsearch (5.6.3)
-* Kibana (5.6.3)
+* Elasticsearch 5.6.3
+* Kibana 5.6.3
 
 In Alfresco server:
-* Logstash (5.6.3)
+* Logstash 5.6.3
 
 Tested with:
 * Alfresco Content Services 5.2.0
