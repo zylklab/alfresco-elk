@@ -32,15 +32,15 @@ As you probably know ELK = Elastic Search + Logstash + Kibana
 ### Configuration
 
 * Install tools and startup scripts for Elastic, Kibana and Logstash.
-* Install logstash input plugins (http-poller-input)
-* Configure logstash.conf for http-poller-input
+* Install http-poller plugin for logstash (./bin/logstash-plugin install logstash-input-http_poller)
+* Configure logstash.conf for http-poller
 * Import searches, visualizations and dashboards in Kibana management.
 
 ### Available metrics via OOTB Support Tools webscripts
 
 With [OOTB Support Tools addon](https://github.com/OrderOfTheBee/ootbee-support-tools), it is possible to extract useful information about JVM, threads or logged users via webscript. We can use the JSON information from the available webscripts of the addon (System Performance, Active Users and SOLR).
 
-Some metrics are available via webscript using http-poller-input plugin in logstash:
+Some metrics are available via webscript using http-poller plugin in logstash:
 - JVM Used memory
 - Number of threads
 - Number of active database connections
@@ -61,7 +61,7 @@ For more details, you can check [Alfresco docs](https://docs.alfresco.com/5.0/ta
 ### Configuration
 
 * Install tools and startup scripts for Elastic, Kibana and Logstash.
-* Install logstash input plugins (jmx-input-plugin)
+* Install JMX plugin for logstash  (./bin/logstash-plugin install logstash-input-jmx)
 * Configure logstash.conf for JMX input config and polling frequency
 * JMX endpoint and available objects in jmx/jmx.conf
 * Import searches, visualizations and dashboards in Kibana management.
