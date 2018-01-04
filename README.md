@@ -61,9 +61,9 @@ Some metrics are available via webscript using http-poller plugin in logstash:
 
 ### Prerrequisites in Alfresco server
 
-* Enabling JMX in Alfresco server
- * -Dcom.sun.management.jmxremote in setenv.sh (java process)
- * alfresco.jmx.connector.enabled=true in alfresco-global.properties
+* Enabling JMX in Alfresco server:
+    * -Dcom.sun.management.jmxremote in setenv.sh (java process)
+    * alfresco.jmx.connector.enabled=true in alfresco-global.properties
 
 For more details, you can check [Alfresco docs](https://docs.alfresco.com/5.0/tasks/jmx-access.html)
 
