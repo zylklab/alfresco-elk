@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "AV-BTnFYZChSI-d38kZA",
+    "_type": "search",
+    "_source": {
+      "title": "JMX - Heap Memory (Alfresco)",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-As-umZChSI-d3zj8v\",\"highlightAll\":true,\"version\":true,\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}},\"filter\":[{\"meta\":{\"index\":\"AV-As-umZChSI-d3zj8v\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"metric_path\",\"value\":\"alfresco.Heap_Memory.HeapMemoryUsage.used\"},\"query\":{\"match\":{\"metric_path\":{\"query\":\"alfresco.Heap_Memory.HeapMemoryUsage.used\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  }
+]
