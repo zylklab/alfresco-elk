@@ -1,0 +1,210 @@
+[
+  {
+    "_id": "AV9PDV6nNoMvjBfFS6S-",
+    "_type": "search",
+    "_source": {
+      "title": "OOTB Performance",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"ootb-performance\"},\"query\":{\"match\":{\"type\":{\"query\":\"ootb-performance\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV--mfXyFxD6kE5X6mai",
+    "_type": "search",
+    "_source": {
+      "title": "Error Logs search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "logLevel",
+        "class",
+        "Msg"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"key\":\"type\",\"negate\":false,\"type\":\"phrase\",\"value\":\"alfresco-log\"},\"query\":{\"match\":{\"type\":{\"query\":\"alfresco-log\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"key\":\"logLevel\",\"negate\":false,\"type\":\"phrase\",\"value\":\"ERROR\"},\"query\":{\"match\":{\"logLevel\":{\"query\":\"ERROR\",\"type\":\"phrase\"}}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV9PH1rUNoMvjBfFS69t",
+    "_type": "search",
+    "_source": {
+      "title": "OOTB Sessions",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "NumActive",
+        "UserCountNonExpired",
+        "TicketCountNonExpired",
+        "MaxActive",
+        "NumIdle"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"key\":\"type\",\"negate\":false,\"type\":\"phrase\",\"value\":\"ootb-sessions\"},\"query\":{\"match\":{\"type\":{\"query\":\"ootb-sessions\",\"type\":\"phrase\"}}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-_-MJuFxD6kE5X6m5H",
+    "_type": "search",
+    "_source": {
+      "title": "All Logs search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "logLevel",
+        "class",
+        "Msg"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"key\":\"type\",\"negate\":false,\"type\":\"phrase\",\"value\":\"alfresco-log\"},\"query\":{\"match\":{\"type\":{\"query\":\"alfresco-log\",\"type\":\"phrase\"}}}},{\"meta\":{\"negate\":true,\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"type\":\"phrase\",\"key\":\"tags\",\"value\":\"_grokparsefailure\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"tags\":{\"query\":\"_grokparsefailure\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV_E8VrKFxD6kE5X6oOg",
+    "_type": "search",
+    "_source": {
+      "title": "LDAP sync search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Msg"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"AV9EsqYSgGJFt1_PRWNo\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"Synchronization AND \\\"User Creation and Association: Completed\\\"\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "AV_E4rmBFxD6kE5X6oN3",
+    "_type": "search",
+    "_source": {
+      "title": "Service startup search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Msg"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"AV9EsqYSgGJFt1_PRWNo\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"\\\"Alfresco Content Services started\\\"\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+      }
+    }
+  },
+  {
+    "_id": "AV_V9jNFFxD6kE5X6r8F",
+    "_type": "search",
+    "_source": {
+      "title": "Success Logins (except monitor) search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"highlightAll\":true,\"version\":true,\"query\":{\"query_string\":{\"query\":\"+SUCCEEDED -monitor\",\"analyze_wildcard\":true}},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"type\":\"phrase\",\"key\":\"class\",\"value\":\"[security.authentication.AbstractChainingAuthenticationService]\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"class\":{\"query\":\"[security.authentication.AbstractChainingAuthenticationService]\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWADrJ9qFxD6kE5X62pc",
+    "_type": "search",
+    "_source": {
+      "title": "OOTB SOLR",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"type\",\"value\":\"ootb-solr\"},\"query\":{\"match\":{\"type\":{\"query\":\"ootb-solr\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWAbz8zuFxD6kE5X7IEa",
+    "_type": "search",
+    "_source": {
+      "title": "Public urls expired search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Msg"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV9EsqYSgGJFt1_PRWNo\",\"highlightAll\":true,\"version\":true,\"query\":{\"query_string\":{\"query\":\"zk-expired\",\"analyze_wildcard\":true}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWBZXe9bFxD6kE5X7Tfc",
+    "_type": "search",
+    "_source": {
+      "title": "Transformation errors search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Msg"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"index\": \"AV9EsqYSgGJFt1_PRWNo\",\n  \"highlightAll\": true,\n  \"version\": true,\n  \"query\": {\n    \"query_string\": {\n      \"query\": \"Unsupported transformation AND logLevel:'ERROR'\",\n      \"analyze_wildcard\": true\n    }\n  },\n  \"filter\": []\n}"
+      }
+    }
+  }
+]

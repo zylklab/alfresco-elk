@@ -1,0 +1,115 @@
+[
+  {
+    "_id": "AV99kMf_FxD6kE5X6YQg",
+    "_type": "dashboard",
+    "_source": {
+      "title": "OOTB - System Performance dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AV9PEWYcNoMvjBfFS6gj\",\"panelIndex\":1,\"row\":1,\"size_x\":9,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV9PEwouNoMvjBfFS6m6\",\"panelIndex\":3,\"row\":7,\"size_x\":9,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AV-mxBinFxD6kE5X6hex\",\"panelIndex\":5,\"row\":7,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"_source\"],\"id\":\"AV9PDV6nNoMvjBfFS6S-\",\"panelIndex\":6,\"row\":10,\"size_x\":12,\"size_y\":3,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":10,\"id\":\"AV-m1bHWFxD6kE5X6hfn\",\"panelIndex\":7,\"row\":1,\"size_x\":3,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWAD4CcYFxD6kE5X62rv\",\"panelIndex\":8,\"row\":4,\"size_x\":9,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":3,\"size_y\":3,\"panelIndex\":9,\"type\":\"visualization\",\"id\":\"AWAD5KyVFxD6kE5X62sA\",\"col\":10,\"row\":4}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-5\":{\"vis\":{\"defaultColors\":{\"0 - 150\":\"rgb(0,104,55)\",\"150 - 200\":\"rgb(255,255,190)\",\"200 - 275\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-7\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"defaultColors\":{\"0 - 2000\":\"rgb(0,104,55)\",\"2000 - 3000\":\"rgb(255,255,190)\",\"3000 - 4000\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-9\":{\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(0,104,55)\",\"50 - 75\":\"rgb(255,255,190)\",\"75 - 100\":\"rgb(165,0,38)\"},\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AV9PFfEkNoMvjBfFS6wi",
+    "_type": "dashboard",
+    "_source": {
+      "title": "OOTB - Active Sessions dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AV9d6x180BjzPlTDda5Z\",\"panelIndex\":6,\"row\":1,\"size_x\":10,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV9d9s2W0BjzPlTDdbi4\",\"panelIndex\":7,\"row\":4,\"size_x\":10,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV9d-V0w0BjzPlTDdbr1\",\"panelIndex\":8,\"row\":7,\"size_x\":10,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"AV_GWDiiFxD6kE5X6o5e\",\"panelIndex\":11,\"row\":1,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"AV_GW4MFFxD6kE5X6o5m\",\"panelIndex\":12,\"row\":7,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"col\":11,\"id\":\"AV_GW_8jFxD6kE5X6o5p\",\"panelIndex\":13,\"row\":4,\"size_x\":2,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":12,\"size_y\":3,\"panelIndex\":14,\"type\":\"search\",\"id\":\"AV9PH1rUNoMvjBfFS69t\",\"col\":1,\"row\":10,\"columns\":[\"NumActive\",\"UserCountNonExpired\",\"TicketCountNonExpired\",\"MaxActive\",\"NumIdle\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-11\":{\"vis\":{\"defaultColors\":{\"0 - 10\":\"rgb(0,104,55)\",\"10 - 30\":\"rgb(255,255,190)\",\"30 - 50\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-12\":{\"vis\":{\"defaultColors\":{\"0 - 10\":\"rgb(0,104,55)\",\"10 - 30\":\"rgb(255,255,190)\",\"30 - 50\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-13\":{\"vis\":{\"defaultColors\":{\"0 - 10\":\"rgb(0,104,55)\",\"10 - 30\":\"rgb(255,255,190)\",\"30 - 50\":\"rgb(165,0,38)\"},\"legendOpen\":false}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-24h",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AV--oKLRFxD6kE5X6ma2",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Alfresco Logs dashboard (Error)",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[\n  {\n    \"col\": 1,\n    \"id\": \"AV--nsUmFxD6kE5X6max\",\n    \"panelIndex\": 3,\n    \"row\": 1,\n    \"size_x\": 8,\n    \"size_y\": 7,\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 9,\n    \"id\": \"AV--p0DnFxD6kE5X6mbJ\",\n    \"panelIndex\": 5,\n    \"row\": 1,\n    \"size_x\": 4,\n    \"size_y\": 4,\n    \"type\": \"visualization\"\n  },\n  {\n    \"col\": 1,\n    \"columns\": [\n      \"logLevel\",\n      \"class\",\n      \"Msg\"\n    ],\n    \"id\": \"AV--mfXyFxD6kE5X6mai\",\n    \"panelIndex\": 6,\n    \"row\": 8,\n    \"size_x\": 12,\n    \"size_y\": 5,\n    \"sort\": [\n      \"@timestamp\",\n      \"desc\"\n    ],\n    \"type\": \"search\"\n  },\n  {\n    \"size_x\": 4,\n    \"size_y\": 3,\n    \"panelIndex\": 7,\n    \"type\": \"visualization\",\n    \"id\": \"AWADpEZAFxD6kE5X62pF\",\n    \"col\": 9,\n    \"row\": 5\n  }\n]",
+      "optionsJSON": "{\n  \"darkTheme\": false\n}",
+      "uiStateJSON": "{\n  \"P-5\": {\n    \"vis\": {\n      \"params\": {\n        \"sort\": {\n          \"columnIndex\": null,\n          \"direction\": null\n        }\n      }\n    }\n  },\n  \"P-7\": {\n    \"vis\": {\n      \"defaultColors\": {\n        \"0 - 50\": \"rgb(0,104,55)\",\n        \"50 - 75\": \"rgb(255,255,190)\",\n        \"75 - 100\": \"rgb(165,0,38)\"\n      }\n    }\n  }\n}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now-1w/w",
+      "timeFrom": "now-1w/w",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n  \"filter\": [\n    {\n      \"query\": {\n        \"match_all\": {}\n      }\n    }\n  ],\n  \"highlightAll\": true,\n  \"version\": true\n}"
+      }
+    }
+  },
+  {
+    "_id": "AWADrZK1FxD6kE5X62pf",
+    "_type": "dashboard",
+    "_source": {
+      "title": "OOTB - SOLR dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWADuNS7FxD6kE5X62qF\",\"panelIndex\":2,\"row\":1,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"AWADs7RvFxD6kE5X62p2\",\"panelIndex\":3,\"row\":1,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWAbb0pQFxD6kE5X7IAi\",\"panelIndex\":4,\"row\":4,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"col\":9,\"id\":\"AWAbcf2fFxD6kE5X7IAq\",\"panelIndex\":5,\"row\":4,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"_source\"],\"id\":\"AWADrJ9qFxD6kE5X62pc\",\"panelIndex\":6,\"row\":7,\"size_x\":8,\"size_y\":3,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":9,\"id\":\"AWAbgrvEFxD6kE5X7IBV\",\"panelIndex\":7,\"row\":7,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(0,104,55)\",\"50 - 100\":\"rgb(165,0,38)\"}}},\"P-2\":{\"vis\":{\"legendOpen\":true}},\"P-3\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"defaultColors\":{\"0 - 300000\":\"rgb(0,104,55)\"},\"legendOpen\":false}},\"P-4\":{\"vis\":{\"legendOpen\":true}},\"P-5\":{\"vis\":{\"defaultColors\":{\"0 - 300000\":\"rgb(0,104,55)\"},\"legendOpen\":false}},\"P-7\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-30d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AV--r2FmFxD6kE5X6mbd",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Alfresco Logs dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":9,\"id\":\"AV--nLlyFxD6kE5X6maq\",\"panelIndex\":1,\"row\":5,\"size_x\":4,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV--pCx-FxD6kE5X6ma_\",\"panelIndex\":4,\"row\":5,\"size_x\":8,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV--sw_BFxD6kE5X6mbn\",\"panelIndex\":5,\"row\":1,\"size_x\":8,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"logLevel\",\"class\",\"Msg\"],\"id\":\"AV-_-MJuFxD6kE5X6m5H\",\"panelIndex\":6,\"row\":9,\"size_x\":12,\"size_y\":4,\"sort\":[\"@timestamp\",\"desc\"],\"type\":\"search\"},{\"col\":9,\"id\":\"AWADVYCrFxD6kE5X62l8\",\"panelIndex\":9,\"row\":1,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"col\":9,\"id\":\"AWADU8LkFxD6kE5X62l2\",\"panelIndex\":10,\"row\":3,\"size_x\":4,\"size_y\":2,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":3,\"panelIndex\":11,\"type\":\"search\",\"id\":\"AWBZXe9bFxD6kE5X7Tfc\",\"col\":1,\"row\":13,\"columns\":[\"Msg\"],\"sort\":[\"@timestamp\",\"desc\"]},{\"size_x\":6,\"size_y\":3,\"panelIndex\":12,\"type\":\"search\",\"id\":\"AWAbz8zuFxD6kE5X7IEa\",\"col\":7,\"row\":13,\"columns\":[\"Msg\"],\"sort\":[\"@timestamp\",\"desc\"]}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-10\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":0,\"direction\":\"asc\"}}}},\"P-4\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-9\":{\"spy\":{\"mode\":{\"fill\":false,\"name\":null}},\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-7d",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
